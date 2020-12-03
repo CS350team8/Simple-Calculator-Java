@@ -6,7 +6,7 @@
  * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
  */
 
-package simplejavacalculator;
+package com.simplejavacalculator;
 
 import static java.lang.Double.NaN;
 import static java.lang.Math.log10;
@@ -24,6 +24,8 @@ public class Calculator {
 
     private Double num1, num2;
     private BiOperatorModes mode = BiOperatorModes.normal;
+
+    // should have constructor to initiate initial value (num1 = 0.0 and num2 = 0.0)
 
     private Double calculateBiImpl() {
         if (mode == BiOperatorModes.normal) {
@@ -54,6 +56,7 @@ public class Calculator {
     }
 
     public Double calculateBi(BiOperatorModes newMode, Double num) {
+        // i think the current works
         if (mode == BiOperatorModes.normal) {
             num2 = 0.0;
             num1 = num;
@@ -111,7 +114,7 @@ public class Calculator {
         if (newMode == MonoOperatorModes.rate) {
            return num / 100;
         }
-        if (newMode == MonoOperatorModes.abs){
+        if (newMode == MonoOperatorModes.abs) {
             return Math.abs(num);
         }
 

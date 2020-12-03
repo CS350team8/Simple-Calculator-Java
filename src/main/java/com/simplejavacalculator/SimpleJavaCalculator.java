@@ -6,7 +6,7 @@
  * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
  */
 
-package simplejavacalculator;
+package com.simplejavacalculator;
 
 public class SimpleJavaCalculator {
    

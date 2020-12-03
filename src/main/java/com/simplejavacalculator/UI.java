@@ -6,7 +6,7 @@
  * @license     Apache (http://www.apache.org/licenses/LICENSE-2.0)
  */
 
-package simplejavacalculator;
+package com.simplejavacalculator;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -67,7 +67,7 @@ public class UI implements ActionListener {
       
       font = new Font("Consolas",Font.PLAIN, 18);
       
-      text = new JTextArea(1, 30);
+      text = new JTextArea(1, 10);
       
       textFont = new Font("Consolas",Font.BOLD, 24);
       
@@ -304,8 +304,9 @@ public class UI implements ActionListener {
       Double num;
       String str;
       str = text.getText();
+//      if the string is empty, then it will raise exception but now it is not handled yet
       num = Double.valueOf(str);
-      
+
       return num;
    }
    

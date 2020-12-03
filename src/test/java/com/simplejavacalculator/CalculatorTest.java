@@ -1,4 +1,4 @@
-package simplejavacalculator;
+package com.simplejavacalculator;
 
 import org.junit.jupiter.api.Test;
 
