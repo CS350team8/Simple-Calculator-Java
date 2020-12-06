@@ -36,12 +36,12 @@ class CalculatorTest {
         Calculator calc = new Calculator();
 
         // first opreation always give Nan
-        Double res = calc.calculateBi(Calculator.BiOperatorModes.ADD, 0.0);
+        Double res = calc.calculateBi(Calculator.BiOperatorModes.NORMAL, 0.0);
         assertEquals(NaN, res);
 
         // second operation
         res = calc.calculateEqual(2.0);
-        assertEquals(2.0, res);
+        assertEquals(NaN, res);
     }
 
     @Test
